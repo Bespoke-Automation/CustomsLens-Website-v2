@@ -64,13 +64,7 @@ export function BookingContent() {
         <div className="max-w-5xl mx-auto">
           {/* Hero Section */}
           <div className="text-center mb-12">
-            <div className="mb-6">
-              <span className="inline-block px-4 py-2 bg-white/20 rounded-full text-white text-sm font-medium backdrop-blur-sm">
-                📅 Schedule Your Demo
-              </span>
-            </div>
-            
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-quantico font-bold text-white mb-6">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-quantico font-bold text-white mb-6 mt-12">
               See CustomsLens in Action
             </h1>
             
