@@ -51,8 +51,8 @@ export function FeaturesSection() {
               className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-card border-border/50 overflow-hidden"
             >
               <CardContent className="p-8">
-                <div className="mb-6 inline-flex items-center justify-center w-16 h-16 bg-primary-blue/10 rounded-2xl group-hover:bg-primary-blue group-hover:text-white transition-all duration-300">
-                  <solution.icon className="h-8 w-8 text-primary-blue group-hover:text-white" />
+                <div className="mb-6 inline-flex items-center justify-center w-16 h-16 bg-primary-blue/10 rounded-2xl group-hover:bg-primary-blue transition-all duration-300">
+                  <solution.icon className="h-8 w-8 text-primary-blue group-hover:text-white transition-colors duration-300" />
                 </div>
                 
                 <h3 className="text-2xl font-quantico font-bold text-card-foreground mb-4">
@@ -94,11 +94,11 @@ export function FeaturesSection() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/book-demo">
-              <Button size="lg" className="bg-primary-blue hover:bg-primary-blue/90 text-white px-8 py-3 font-quantico uppercase tracking-wide text-sm font-medium">
+              <Button variant="subtle" size="lg" className="px-8 py-3 font-quantico uppercase tracking-wide text-sm font-medium">
                 Request Demo
               </Button>
             </Link>
-            <Button variant="outline" size="lg" className="px-8 py-3 font-quantico uppercase tracking-wide text-sm font-medium">
+            <Button variant="subtle-outline" size="lg" className="px-8 py-3 font-quantico uppercase tracking-wide text-sm font-medium">
               View Pricing
             </Button>
           </div>

@@ -29,7 +29,7 @@ export function HeroSection() {
   ]
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center gradient-hero overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center gradient-hero overflow-hidden pt-20">
       {/* Animated World Map Background */}
       <div className="absolute inset-0 opacity-40 pointer-events-none">
         <div className="w-full h-full flex items-center justify-center">
