@@ -88,7 +88,7 @@ export function TestimonialsSection() {
           </Card>
 
           <div className="flex justify-center items-center space-x-4 mt-8">
-            <Button variant="outline" size="sm" onClick={prevTestimonial} className="p-2 bg-transparent">
+            <Button variant="outline" size="icon" onClick={prevTestimonial} className="!h-10 !w-10">
               <ChevronLeft className="h-4 w-4" />
             </Button>
 
@@ -104,7 +104,7 @@ export function TestimonialsSection() {
               ))}
             </div>
 
-            <Button variant="outline" size="sm" onClick={nextTestimonial} className="p-2 bg-transparent">
+            <Button variant="outline" size="icon" onClick={nextTestimonial} className="!h-10 !w-10">
               <ChevronRight className="h-4 w-4" />
             </Button>
           </div>

@@ -30,7 +30,7 @@ export function Footer() {
                   placeholder="Your email address"
                   className="bg-background/10 border-background/20 text-background placeholder:text-background/50 focus:border-primary-blue"
                 />
-                <Button variant="secondary" size="sm" className="bg-primary-blue text-white hover:bg-primary-blue/90 font-quantico uppercase tracking-wide text-xs font-medium">
+                <Button variant="primary" size="sm" className="font-quantico uppercase tracking-wide font-medium">
                   Subscribe
                 </Button>
               </div>

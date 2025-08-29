@@ -95,7 +95,8 @@ export function HowItWorksSection() {
 
                 <Link href="/book-demo">
                   <Button 
-                    className="w-full bg-primary-blue hover:bg-primary-blue/90 text-white font-quantico uppercase tracking-wide text-sm font-medium"
+                    variant="primary"
+                    className="w-full font-quantico uppercase tracking-wide font-medium"
                   >
                     {journey.cta}
                     <ArrowRight className="ml-2 h-4 w-4" />
@@ -154,7 +155,7 @@ export function HowItWorksSection() {
 
           <div className="text-center mt-12">
             <Link href="/book-demo">
-              <Button size="lg" className="bg-primary-blue hover:bg-primary-blue/90 text-white px-8 py-3 font-quantico uppercase tracking-wide text-sm font-medium">
+              <Button variant="primary" size="lg" className="font-quantico uppercase tracking-wide font-medium">
                 Schedule Your Demo
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>

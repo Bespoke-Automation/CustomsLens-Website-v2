@@ -3,14 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "next build",
-    "dev": "next dev",
-    "lint": "next lint",
-    "start": "next start"
+    "build": "./node_modules/.bin/next build",
+    "dev": "./node_modules/.bin/next dev",
+    "lint": "./node_modules/.bin/next lint",
+    "start": "./node_modules/.bin/next start"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
-    "@next/font": "^14.2.15",
     "@radix-ui/react-accordion": "1.2.2",
     "@radix-ui/react-alert-dialog": "1.1.4",
     "@radix-ui/react-aspect-ratio": "1.1.1",

@@ -65,15 +65,13 @@ export function Header() {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="ghost" className={`font-quantico uppercase tracking-wide text-sm font-medium transition-colors duration-200 ${
-              isScrolled ? "text-gray-700 hover:text-primary-blue" : "text-white hover:text-white/80"
+            <Button variant="ghost" className={`font-quantico uppercase tracking-wide font-medium ${
+              isScrolled ? "text-gray-700" : "text-white"
             }`}>
               Login
             </Button>
             <Link href="/book-demo">
-              <Button className={`font-quantico uppercase tracking-wide text-sm font-medium transition-colors duration-200 ${
-                isScrolled ? "bg-primary-blue text-white hover:bg-primary-blue/90" : "bg-white text-primary-blue hover:bg-white/90"
-              }`}>
+              <Button variant={isScrolled ? "primary" : "white"} className="font-quantico uppercase tracking-wide font-medium">
                 Request Demo
               </Button>
             </Link>
@@ -81,8 +79,8 @@ export function Header() {
 
           {/* Mobile menu button */}
           <div className="md:hidden">
-            <Button variant="ghost" size="sm" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className={`transition-colors duration-200 ${
-              isScrolled ? "text-gray-700 hover:text-primary-blue" : "text-white hover:text-white/80"
+            <Button variant="ghost" size="sm" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className={`${
+              isScrolled ? "text-gray-700" : "text-white"
             }`}>
               {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>

@@ -17,15 +17,15 @@ export function CTASection() {
 
           <div className="flex flex-col lg:flex-row gap-6 justify-center items-center mb-12">
             <Link href="/book-demo">
-              <Button size="lg" className="bg-white text-primary-blue hover:bg-white/90 px-8 py-4 font-quantico uppercase tracking-wide text-sm font-semibold shadow-lg">
+              <Button variant="white" size="lg" className="font-quantico uppercase tracking-wide font-semibold">
                 Request Personalized Demo
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
             <Button
-              variant="outline"
+              variant="white-outline"
               size="lg"
-              className="px-8 py-4 border-white/30 text-white hover:bg-white/10 bg-transparent backdrop-blur-sm font-quantico uppercase tracking-wide text-sm font-medium"
+              className="font-quantico uppercase tracking-wide font-medium"
             >
               Explore Solutions
             </Button>
