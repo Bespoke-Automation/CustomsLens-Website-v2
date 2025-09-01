@@ -37,21 +37,21 @@
     "subtitle": "Complete Customs Platform",
     "description": "From document automation to full-service management, CustomsLens offers flexible solutions for every stage of customs clearance in the Netherlands.",
     "learnMore": "Learn More",
-    "dvbfv": {
+    "hsCodes": {
       "title": "DV/BFV Module",
       "description": "Automate Direct and Limited Fiscal Representation documents with drag-and-drop templates, real-time validation, and digital signing.",
       "benefit1": "80% time reduction",
       "benefit2": "Zero validation errors", 
       "benefit3": "Complete audit trail"
     },
-    "requests": {
+    "compliance": {
       "title": "Customs Requests",
       "description": "Transform email-based clearance requests into structured digital workflows with AI-powered invoice extraction.",
       "benefit1": "Multi-language support",
       "benefit2": "Container tracking",
       "benefit3": "Document management"
     },
-    "caas": {
+    "documents": {
       "title": "Customs-as-a-Service",
       "description": "Complete managed service connecting international forwarders to vetted Dutch customs brokers.",
       "benefit1": "Broker network access",
@@ -75,9 +75,7 @@
       "description": "Join customs professionals across the Netherlands who are already streamlining their clearance processes with CustomsLens.",
       "requestDemo": "Request Demo",
       "viewPricing": "View Pricing"
-    },
-    "exploreFeatures": "Explore Features",
-    "getStarted": "Get Started"
+    }
   },
   "HowItWorks": {
     "title": "How It Works",
