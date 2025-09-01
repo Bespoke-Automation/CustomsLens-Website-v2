@@ -1,65 +1,48 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Check } from "lucide-react"
-
-const plans = [
-  {
-    name: "Starter",
-    price: "$29",
-    period: "/month",
-    description: "Perfect for small teams getting started",
-    features: [
-      "Up to 5 team members",
-      "Basic workflow automation",
-      "Standard analytics",
-      "Email support",
-      "10GB storage",
-    ],
-    popular: false,
-  },
-  {
-    name: "Professional",
-    price: "$79",
-    period: "/month",
-    description: "Ideal for growing businesses",
-    features: [
-      "Up to 25 team members",
-      "Advanced automation",
-      "Custom dashboards",
-      "Priority support",
-      "100GB storage",
-      "API access",
-    ],
-    popular: true,
-  },
-  {
-    name: "Enterprise",
-    price: "$199",
-    period: "/month",
-    description: "For large organizations",
-    features: [
-      "Unlimited team members",
-      "Enterprise automation",
-      "Advanced analytics",
-      "24/7 dedicated support",
-      "Unlimited storage",
-      "Custom integrations",
-      "SSO & advanced security",
-    ],
-    popular: false,
-  },
-]
+import { useTranslations } from 'next-intl'
 
 export function PricingSection() {
+  const t = useTranslations('Pricing')
+  
+  const plans = [
+    {
+      name: t('starter.name'),
+      price: t('starter.price'),
+      period: t('starter.period'),
+      description: t('starter.description'),
+      features: t('starter.features', { returnObjects: true }) as string[],
+      popular: false,
+    },
+    {
+      name: t('professional.name'),
+      price: t('professional.price'),
+      period: t('professional.period'),
+      description: t('professional.description'),
+      features: t('professional.features', { returnObjects: true }) as string[],
+      popular: true,
+    },
+    {
+      name: t('enterprise.name'),
+      price: t('enterprise.price'),
+      period: t('enterprise.period'),
+      description: t('enterprise.description'),
+      features: t('enterprise.features', { returnObjects: true }) as string[],
+      popular: false,
+    },
+  ]
   return (
     <section id="pricing" className="py-20 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-serif font-bold text-foreground mb-4">
-            Simple, Transparent Pricing
+            {t('title')}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Choose the plan that fits your business needs. All plans include a 14-day free trial.
+            {t('subtitle')}
           </p>
         </div>
 
@@ -72,7 +55,7 @@ export function PricingSection() {
               {plan.popular && (
                 <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
                   <span className="bg-accent text-accent-foreground px-4 py-1 rounded-full text-sm font-medium">
-                    Most Popular
+                    {t('professional.popular')}
                   </span>
                 </div>
               )}
@@ -103,7 +86,7 @@ export function PricingSection() {
                       : "bg-primary hover:bg-primary/90 text-primary-foreground"
                   }`}
                 >
-                  Start Free Trial
+                  {index === 2 ? t('enterprise.cta') : t('starter.cta')}
                 </Button>
               </CardContent>
             </Card>

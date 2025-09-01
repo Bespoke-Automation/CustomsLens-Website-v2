@@ -1,0 +1,259 @@
+{
+  "Header": {
+    "home": "Home",
+    "features": "Functies",
+    "howItWorks": "Hoe het werkt",
+    "pricing": "Prijzen",
+    "testimonials": "Getuigenissen",
+    "bookDemo": "Demo Boeken"
+  },
+  "Hero": {
+    "flag": "🇳🇱 Nederlandse Douane Specialisten",
+    "title": "AI-Gedreven Douane Intelligence Platform",
+    "subtitle": "Verminder douane-aangiftefouten met 90%, zorg voor naleving en optimaliseer uw import/export operaties met onze geavanceerde AI-technologie.",
+    "startFreeTrial": "Start Gratis Proefperiode",
+    "watchDemo": "Bekijk Demo",
+    "trustedBy": "Vertrouwd door",
+    "stats": {
+      "processing": {
+        "number": "80%",
+        "title": "Snellere Verwerking",
+        "description": "Geautomatiseerde documentverwerking elimineert handmatige fouten"
+      },
+      "compliance": {
+        "number": "100%",
+        "title": "Naleving",
+        "description": "Real-time validatie verzekert nul afwijzingen"
+      },
+      "visibility": {
+        "number": "24/7",
+        "title": "Zichtbaarheid",
+        "description": "Volg elke zending van verzoek tot inklaring"
+      }
+    }
+  },
+  "Features": {
+    "title": "Functies",
+    "subtitle": "Stroomlijn Uw Douane Operaties",
+    "description": "Ons AI-gedreven platform biedt uitgebreide tools om elk aspect van uw douaneworkflow te optimaliseren",
+    "learnMore": "Meer Leren",
+    "hsCodes": {
+      "title": "HS-Code Classificatie",
+      "description": "Gebruik AI om producten accuraat te classificeren met de juiste HS-codes, waardoor fouten en vertragingen worden verminderd",
+      "benefit1": "90% nauwkeurigheid",
+      "benefit2": "Real-time validatie",
+      "benefit3": "Directe classificatie"
+    },
+    "compliance": {
+      "title": "Nalevingsmonitoring",
+      "description": "Blijf op de hoogte van veranderende regelgeving en zorg voor volledige naleving in alle rechtsgebieden",
+      "benefit1": "Multi-jurisdictie",
+      "benefit2": "Real-time updates",
+      "benefit3": "Geautomatiseerde waarschuwingen"
+    },
+    "documents": {
+      "title": "Documentbeheer",
+      "description": "Automatiseer documentgeneratie en validatie om uw douanepapierwerk te stroomlijnen",
+      "benefit1": "Auto-generatie",
+      "benefit2": "Digitale validatie",
+      "benefit3": "Audit trails"
+    },
+    "riskAssessment": {
+      "title": "Risicobeoordeling",
+      "description": "Identificeer potentiële nalevingsproblemen voordat ze kostbare problemen worden"
+    },
+    "analytics": {
+      "title": "Analytics Dashboard",
+      "description": "Krijg inzicht in uw douane-operaties met real-time analytics en rapportage"
+    },
+    "integration": {
+      "title": "Systeemintegratie",
+      "description": "Naadloos integreren met uw bestaande ERP- en logistieke systemen"
+    },
+    "cta": {
+      "title": "Klaar om Uw Operaties te Transformeren?",
+      "description": "Sluit u aan bij douaneprofessionals in Nederland die hun klaringsprocessen al stroomlijnen met CustomsLens.",
+      "requestDemo": "Demo Aanvragen",
+      "viewPricing": "Bekijk Prijzen"
+    }
+  },
+  "HowItWorks": {
+    "title": "Hoe het Werkt",
+    "subtitle": "Drie Paden naar Succes",
+    "description": "Of u nu een douanemakelaar, internationale expediteur of importeur bent, CustomsLens biedt een op maat gemaakte reis om uw douaneoperaties te transformeren.",
+    "brokers": {
+      "title": "Voor Douanemakelaars",
+      "description": "Moderniseer uw praktijk en trek nieuwe klanten aan met digitale efficiëntie",
+      "step1": "Aanmelden voor CustomsLens SaaS",
+      "step2": "Configureer sjablonen en workflows",
+      "step3": "Nodig klanten uit op het platform",
+      "step4": "Verwerk klaringen digitaal",
+      "cta": "Begin Moderniseren"
+    },
+    "forwarders": {
+      "title": "Voor Internationale Expediteurs",
+      "description": "Stroomlijn uw Nederlandse operaties met vertrouwen en transparantie",
+      "step1": "Kies SaaS of CaaS optie",
+      "step2": "Verbind met makelaarnetwerk",
+      "step3": "Dien gestructureerde verzoeken in",
+      "step4": "Volg zendingen in real-time",
+      "cta": "Verken Opties"
+    },
+    "importers": {
+      "title": "Voor Importeurs",
+      "description": "Ondervind nooit meer vertragingen door documentatiefouten",
+      "step1": "Ontvang uitnodiging van uw serviceprovider",
+      "step2": "Voltooi bedrijfsvalidatie één keer",
+      "step3": "Onderteken documenten direct digitaal",
+      "step4": "Toegang tot alle documentatie centraal",
+      "cta": "Aan de Slag"
+    },
+    "integration": {
+      "title": "Naadloos Integratieproces",
+      "description": "Van setup tot volledige operatie, ons onboarding proces zorgt ervoor dat u vanaf dag één maximale waarde haalt.",
+      "connect": {
+        "title": "1. Verbinden",
+        "description": "Koppel uw bestaande systemen of begin fresh met CustomsLens"
+      },
+      "automate": {
+        "title": "2. Automatiseren",
+        "description": "AI handelt documentverwerking en validatie automatisch af"
+      },
+      "monitor": {
+        "title": "3. Monitoren",
+        "description": "Volg alle douaneactiviteiten via real-time dashboards"
+      },
+      "scale": {
+        "title": "4. Schalen",
+        "description": "Breid operaties uit met vertrouwen en naleving"
+      },
+      "cta": "Plan Uw Demo"
+    }
+  },
+  "Pricing": {
+    "title": "Prijzen",
+    "subtitle": "Kies het Perfecte Plan voor Uw Bedrijf",
+    "monthly": "Maandelijks",
+    "annually": "Jaarlijks",
+    "save20": "Bespaar 20%",
+    "starter": {
+      "name": "Starter",
+      "price": "€249",
+      "period": "/maand",
+      "description": "Perfect voor kleine bedrijven",
+      "features": [
+        "Tot 100 classificaties/maand",
+        "Basis nalevingsmonitoring",
+        "E-mail ondersteuning",
+        "Standaard integraties"
+      ],
+      "cta": "Start Gratis Proefperiode"
+    },
+    "professional": {
+      "name": "Professioneel",
+      "price": "€649",
+      "period": "/maand",
+      "description": "Voor groeiende bedrijven",
+      "popular": "Meest Populair",
+      "features": [
+        "Tot 500 classificaties/maand",
+        "Geavanceerde nalevingstools",
+        "Prioriteitsondersteuning",
+        "Aangepaste integraties",
+        "Analytics dashboard"
+      ],
+      "cta": "Start Gratis Proefperiode"
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "price": "Op maat",
+      "period": "",
+      "description": "Voor grote organisaties",
+      "features": [
+        "Onbeperkte classificaties",
+        "Volledige nalevingssuite",
+        "Toegewijd ondersteuningsteam",
+        "Aangepaste AI-training",
+        "On-premise implementatie optie"
+      ],
+      "cta": "Contact Verkoop"
+    }
+  },
+  "Testimonials": {
+    "title": "Getuigenissen",
+    "subtitle": "Wat Onze Klanten Zeggen",
+    "testimonial1": {
+      "quote": "CustomsLens heeft onze importoperaties getransformeerd. We hebben classificatiefouten met 95% verminderd en talloze uren bespaard.",
+      "author": "Sarah Chen",
+      "role": "Hoofd Logistiek",
+      "company": "Global Trade Co."
+    },
+    "testimonial2": {
+      "quote": "De AI-nauwkeurigheid is indrukwekkend. Het vangt nalevingsproblemen op die we zouden hebben gemist, waardoor we kostbare boetes besparen.",
+      "author": "Michael Rodriguez",
+      "role": "Nalevingsdirecteur",
+      "company": "TechImports Inc."
+    },
+    "testimonial3": {
+      "quote": "Integratie was naadloos en het ROI was onmiddellijk. Onze douaneverwerkingstijd is gehalveerd.",
+      "author": "Emma Thompson",
+      "role": "Operationeel Manager",
+      "company": "FastShip Logistics"
+    }
+  },
+  "CTA": {
+    "title": "Klaar om Uw Douane-operaties te Transformeren?",
+    "subtitle": "Sluit je aan bij duizenden bedrijven die CustomsLens vertrouwen voor hun douanenaleving",
+    "primaryButton": "Start Uw Gratis Proefperiode",
+    "secondaryButton": "Plan een Demo",
+    "benefits": {
+      "setup": "Setup in dagen, niet maanden",
+      "processing": "80% snellere verwerking",
+      "compliance": "100% nalevingsgarantie"
+    },
+    "footer": "Klaar om te beginnen? • Gratis consultatie • Op maat gemaakt"
+  },
+  "Footer": {
+    "description": "AI-gedreven douane intelligence platform dat bedrijven helpt fouten te verminderen, naleving te waarborgen en hun import/export operaties te optimaliseren.",
+    "newsletter": {
+      "title": "Blijf Op De Hoogte",
+      "description": "Ontvang updates over Nederlandse douaneregelgeving en platformfuncties.",
+      "placeholder": "Uw e-mailadres",
+      "subscribe": "Abonneren"
+    },
+    "product": {
+      "title": "Product",
+      "features": "Functies",
+      "pricing": "Prijzen",
+      "integrations": "Integraties",
+      "apiDocs": "API Documentatie"
+    },
+    "company": {
+      "title": "Bedrijf",
+      "about": "Over Ons",
+      "careers": "Carrières",
+      "blog": "Blog",
+      "contact": "Contact"
+    },
+    "support": {
+      "title": "Ondersteuning",
+      "helpCenter": "Helpcentrum",
+      "documentation": "Documentatie",
+      "status": "Systeemstatus",
+      "training": "Training"
+    },
+    "legal": {
+      "title": "Juridisch",
+      "privacy": "Privacybeleid",
+      "terms": "Servicevoorwaarden",
+      "security": "Beveiliging",
+      "compliance": "Naleving"
+    },
+    "copyright": "© 2024 CustomsLens. Alle rechten voorbehouden."
+  },
+  "BookDemo": {
+    "title": "Boek een Demo",
+    "subtitle": "Zie CustomsLens in Actie",
+    "description": "Plan een gepersonaliseerde demo met onze douane-experts en ontdek hoe CustomsLens uw import/export operaties kan transformeren."
+  }
+}

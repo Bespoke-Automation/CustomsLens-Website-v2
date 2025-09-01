@@ -1,9 +1,13 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Play } from "lucide-react"
 import WorldMap from "@/components/ui/world-map"
 import Link from "next/link"
+import { useTranslations } from 'next-intl'
 
 export function HeroSection() {
+  const t = useTranslations('Hero')
   // Global connections TO Netherlands (goods flowing in for customs clearance)
   const connections = [
     {
@@ -41,56 +45,52 @@ export function HeroSection() {
         <div className="text-center max-w-5xl mx-auto">
           <div className="mb-6">
             <span className="inline-block px-4 py-2 bg-white/20 rounded-full text-white text-sm font-medium backdrop-blur-sm">
-              🇳🇱 Netherlands Customs Specialists
+              {t('flag')}
             </span>
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-quantico font-bold text-white mb-6 leading-tight">
-            Streamline Customs
-            <span className="block text-transparent bg-gradient-to-r from-white to-white/70 bg-clip-text">
-              Clearance in the Netherlands
-            </span>
+            {t('title')}
           </h1>
 
           <p className="text-xl sm:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed font-manrope">
-            AI-powered platform transforming how customs brokers, forwarders, and importers navigate Dutch customs with 
-            <span className="font-semibold text-white"> unprecedented speed and compliance</span>.
+            {t('subtitle')}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <Link href="/book-demo">
               <Button variant="white" size="lg" className="font-quantico uppercase tracking-wide font-semibold">
-                Request Demo
+                {t('startFreeTrial')}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
             <Button variant="white-outline" size="lg" className="font-quantico uppercase tracking-wide font-medium">
               <Play className="mr-2 h-5 w-5" />
-              See Solutions
+              {t('watchDemo')}
             </Button>
           </div>
 
           {/* Key Benefits */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-              <div className="text-3xl font-bold text-white mb-2">80%</div>
-              <div className="text-white/90 font-medium">Faster Processing</div>
-              <div className="text-sm text-white/70 mt-2">Automated document handling eliminates manual errors</div>
+              <div className="text-3xl font-bold text-white mb-2">{t('stats.processing.number')}</div>
+              <div className="text-white/90 font-medium">{t('stats.processing.title')}</div>
+              <div className="text-sm text-white/70 mt-2">{t('stats.processing.description')}</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-              <div className="text-3xl font-bold text-white mb-2">100%</div>
-              <div className="text-white/90 font-medium">Compliance</div>
-              <div className="text-sm text-white/70 mt-2">Real-time validation ensures zero rejections</div>
+              <div className="text-3xl font-bold text-white mb-2">{t('stats.compliance.number')}</div>
+              <div className="text-white/90 font-medium">{t('stats.compliance.title')}</div>
+              <div className="text-sm text-white/70 mt-2">{t('stats.compliance.description')}</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-              <div className="text-3xl font-bold text-white mb-2">24/7</div>
-              <div className="text-white/90 font-medium">Visibility</div>
-              <div className="text-sm text-white/70 mt-2">Track every shipment from request to clearance</div>
+              <div className="text-3xl font-bold text-white mb-2">{t('stats.visibility.number')}</div>
+              <div className="text-white/90 font-medium">{t('stats.visibility.title')}</div>
+              <div className="text-sm text-white/70 mt-2">{t('stats.visibility.description')}</div>
             </div>
           </div>
 
           <div className="mt-16 text-white/70">
-            <p className="text-sm">Join Dutch customs professionals already transforming their operations</p>
+            <p className="text-sm">{t('trustedBy')}</p>
           </div>
         </div>
       </div>

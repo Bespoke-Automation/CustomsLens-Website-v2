@@ -1,0 +1,259 @@
+{
+  "Header": {
+    "home": "Home",
+    "features": "Features",
+    "howItWorks": "How it Works",
+    "pricing": "Pricing",
+    "testimonials": "Testimonials",
+    "bookDemo": "Book a Demo"
+  },
+  "Hero": {
+    "flag": "🇳🇱 Netherlands Customs Specialists",
+    "title": "AI-Powered Customs Intelligence Platform",
+    "subtitle": "Reduce customs declaration errors by 90%, ensure compliance, and optimize your import/export operations with our advanced AI technology.",
+    "startFreeTrial": "Start Free Trial",
+    "watchDemo": "Watch Demo",
+    "trustedBy": "Trusted by",
+    "stats": {
+      "processing": {
+        "number": "80%",
+        "title": "Faster Processing",
+        "description": "Automated document handling eliminates manual errors"
+      },
+      "compliance": {
+        "number": "100%",
+        "title": "Compliance",
+        "description": "Real-time validation ensures zero rejections"
+      },
+      "visibility": {
+        "number": "24/7",
+        "title": "Visibility",
+        "description": "Track every shipment from request to clearance"
+      }
+    }
+  },
+  "Features": {
+    "title": "Features",
+    "subtitle": "Streamline Your Customs Operations",
+    "description": "Our AI-powered platform provides comprehensive tools to optimize every aspect of your customs workflow",
+    "learnMore": "Learn More",
+    "hsCodes": {
+      "title": "HS Code Classification",
+      "description": "Leverage AI to accurately classify products with the correct HS codes, reducing errors and delays",
+      "benefit1": "90% accuracy",
+      "benefit2": "Real-time validation", 
+      "benefit3": "Instant classification"
+    },
+    "compliance": {
+      "title": "Compliance Monitoring",
+      "description": "Stay updated with changing regulations and ensure full compliance across all jurisdictions",
+      "benefit1": "Multi-jurisdiction",
+      "benefit2": "Real-time updates",
+      "benefit3": "Automated alerts"
+    },
+    "documents": {
+      "title": "Document Management",
+      "description": "Automate document generation and validation to streamline your customs paperwork",
+      "benefit1": "Auto-generation",
+      "benefit2": "Digital validation",
+      "benefit3": "Audit trails"
+    },
+    "riskAssessment": {
+      "title": "Risk Assessment",
+      "description": "Identify potential compliance issues before they become costly problems"
+    },
+    "analytics": {
+      "title": "Analytics Dashboard",
+      "description": "Gain insights into your customs operations with real-time analytics and reporting"
+    },
+    "integration": {
+      "title": "System Integration",
+      "description": "Seamlessly integrate with your existing ERP and logistics systems"
+    },
+    "cta": {
+      "title": "Ready to Transform Your Operations?",
+      "description": "Join customs professionals across the Netherlands who are already streamlining their clearance processes with CustomsLens.",
+      "requestDemo": "Request Demo",
+      "viewPricing": "View Pricing"
+    }
+  },
+  "HowItWorks": {
+    "title": "How It Works",
+    "subtitle": "Three Paths to Success",
+    "description": "Whether you're a customs broker, international forwarder, or importer, CustomsLens provides a tailored journey to transform your customs operations.",
+    "brokers": {
+      "title": "For Customs Brokers",
+      "description": "Modernize your practice and attract new clients with digital efficiency",
+      "step1": "Sign up for CustomsLens SaaS",
+      "step2": "Configure templates and workflows", 
+      "step3": "Invite clients to the platform",
+      "step4": "Process clearances digitally",
+      "cta": "Start Modernizing"
+    },
+    "forwarders": {
+      "title": "For International Forwarders",
+      "description": "Streamline your Dutch operations with confidence and transparency",
+      "step1": "Choose SaaS or CaaS option",
+      "step2": "Connect with broker network",
+      "step3": "Submit structured requests",
+      "step4": "Track shipments in real-time",
+      "cta": "Explore Options"
+    },
+    "importers": {
+      "title": "For Importers", 
+      "description": "Never face delays from documentation errors again",
+      "step1": "Receive invitation from your service provider",
+      "step2": "Complete company validation once",
+      "step3": "Digitally sign documents instantly",
+      "step4": "Access all documentation centrally",
+      "cta": "Get Started"
+    },
+    "integration": {
+      "title": "Seamless Integration Process",
+      "description": "From setup to full operation, our onboarding process ensures you're maximizing value from day one.",
+      "connect": {
+        "title": "1. Connect",
+        "description": "Link your existing systems or start fresh with CustomsLens"
+      },
+      "automate": {
+        "title": "2. Automate", 
+        "description": "AI handles document processing and validation automatically"
+      },
+      "monitor": {
+        "title": "3. Monitor",
+        "description": "Track all customs activities through real-time dashboards"
+      },
+      "scale": {
+        "title": "4. Scale",
+        "description": "Expand operations with confidence and compliance"
+      },
+      "cta": "Schedule Your Demo"
+    }
+  },
+  "Pricing": {
+    "title": "Pricing",
+    "subtitle": "Choose the Perfect Plan for Your Business",
+    "monthly": "Monthly",
+    "annually": "Annually",
+    "save20": "Save 20%",
+    "starter": {
+      "name": "Starter",
+      "price": "$299",
+      "period": "/month",
+      "description": "Perfect for small businesses",
+      "features": [
+        "Up to 100 classifications/month",
+        "Basic compliance monitoring",
+        "Email support",
+        "Standard integrations"
+      ],
+      "cta": "Start Free Trial"
+    },
+    "professional": {
+      "name": "Professional",
+      "price": "$799",
+      "period": "/month",
+      "description": "For growing companies",
+      "popular": "Most Popular",
+      "features": [
+        "Up to 500 classifications/month",
+        "Advanced compliance tools",
+        "Priority support",
+        "Custom integrations",
+        "Analytics dashboard"
+      ],
+      "cta": "Start Free Trial"
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "price": "Custom",
+      "period": "",
+      "description": "For large organizations",
+      "features": [
+        "Unlimited classifications",
+        "Full compliance suite",
+        "Dedicated support team",
+        "Custom AI training",
+        "On-premise deployment option"
+      ],
+      "cta": "Contact Sales"
+    }
+  },
+  "Testimonials": {
+    "title": "Testimonials",
+    "subtitle": "What Our Customers Say",
+    "testimonial1": {
+      "quote": "CustomsLens has transformed our import operations. We've reduced classification errors by 95% and saved countless hours.",
+      "author": "Sarah Chen",
+      "role": "Head of Logistics",
+      "company": "Global Trade Co."
+    },
+    "testimonial2": {
+      "quote": "The AI accuracy is impressive. It catches compliance issues we would have missed, saving us from costly penalties.",
+      "author": "Michael Rodriguez",
+      "role": "Compliance Director",
+      "company": "TechImports Inc."
+    },
+    "testimonial3": {
+      "quote": "Integration was seamless, and the ROI was immediate. Our customs processing time has been cut in half.",
+      "author": "Emma Thompson",
+      "role": "Operations Manager",
+      "company": "FastShip Logistics"
+    }
+  },
+  "CTA": {
+    "title": "Ready to Transform Your Customs Operations?",
+    "subtitle": "Join thousands of companies that trust CustomsLens for their customs compliance",
+    "primaryButton": "Start Your Free Trial",
+    "secondaryButton": "Schedule a Demo",
+    "benefits": {
+      "setup": "Setup in days, not months",
+      "processing": "80% faster processing", 
+      "compliance": "100% compliance guarantee"
+    },
+    "footer": "Ready to get started? • Free consultation • Tailored to your needs"
+  },
+  "Footer": {
+    "description": "AI-powered customs intelligence platform that helps businesses reduce errors, ensure compliance, and optimize their import/export operations.",
+    "newsletter": {
+      "title": "Stay Informed",
+      "description": "Get updates on Netherlands customs regulations and platform features.",
+      "placeholder": "Your email address",
+      "subscribe": "Subscribe"
+    },
+    "product": {
+      "title": "Product",
+      "features": "Features",
+      "pricing": "Pricing",
+      "integrations": "Integrations",
+      "apiDocs": "API Documentation"
+    },
+    "company": {
+      "title": "Company",
+      "about": "About Us",
+      "careers": "Careers",
+      "blog": "Blog",
+      "contact": "Contact"
+    },
+    "support": {
+      "title": "Support",
+      "helpCenter": "Help Center",
+      "documentation": "Documentation",
+      "status": "System Status",
+      "training": "Training"
+    },
+    "legal": {
+      "title": "Legal",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "security": "Security",
+      "compliance": "Compliance"
+    },
+    "copyright": "© 2024 CustomsLens. All rights reserved."
+  },
+  "BookDemo": {
+    "title": "Book a Demo",
+    "subtitle": "See CustomsLens in Action",
+    "description": "Schedule a personalized demo with our customs experts and discover how CustomsLens can transform your import/export operations."
+  }
+}

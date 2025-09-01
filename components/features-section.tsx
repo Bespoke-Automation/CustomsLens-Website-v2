@@ -1,46 +1,47 @@
+"use client"
+
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { FileText, Users, Headphones, ArrowRight } from "lucide-react"
 import Link from "next/link"
-
-const solutions = [
-  {
-    icon: FileText,
-    title: "DV/BFV Module",
-    description: "Automate Direct and Limited Fiscal Representation documents with drag-and-drop templates, real-time validation, and digital signing.",
-    benefits: ["80% time reduction", "Zero validation errors", "Complete audit trail"],
-    cta: "Learn More"
-  },
-  {
-    icon: Users,
-    title: "Customs Requests",
-    description: "Transform email-based clearance requests into structured digital workflows with AI-powered invoice extraction.",
-    benefits: ["Multi-language support", "Container tracking", "Document management"],
-    cta: "Explore Features"
-  },
-  {
-    icon: Headphones,
-    title: "Customs-as-a-Service",
-    description: "Complete managed service connecting international forwarders to vetted Dutch customs brokers.",
-    benefits: ["Broker network access", "Single point of contact", "Managed compliance"],
-    cta: "Get Started"
-  },
-]
+import { useTranslations } from 'next-intl'
 
 export function FeaturesSection() {
+  const t = useTranslations('Features')
+  
+  const solutions = [
+    {
+      icon: FileText,
+      title: t('hsCodes.title'),
+      description: t('hsCodes.description'),
+      benefits: [t('hsCodes.benefit1'), t('hsCodes.benefit2'), t('hsCodes.benefit3')],
+    },
+    {
+      icon: Users,
+      title: t('compliance.title'),
+      description: t('compliance.description'),
+      benefits: [t('compliance.benefit1'), t('compliance.benefit2'), t('compliance.benefit3')],
+    },
+    {
+      icon: Headphones,
+      title: t('documents.title'),
+      description: t('documents.description'),
+      benefits: [t('documents.benefit1'), t('documents.benefit2'), t('documents.benefit3')],
+    },
+  ]
+  
   return (
-    <section id="solutions" className="py-24 bg-muted/30">
+    <section id="features" className="py-24 bg-muted/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <div className="inline-block px-4 py-2 bg-primary-blue/10 rounded-full text-primary-blue text-sm font-medium mb-4">
-            Our Solutions
+            {t('title')}
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-quantico font-bold text-foreground mb-6">
-            Complete Customs Platform
+            {t('subtitle')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            From document automation to full-service management, CustomsLens offers flexible solutions 
-            for every stage of customs clearance in the Netherlands.
+            {t('description')}
           </p>
         </div>
 
@@ -76,7 +77,7 @@ export function FeaturesSection() {
                   variant="link" 
                   className="group/btn text-primary-blue p-0 h-auto font-quantico uppercase tracking-wide font-medium"
                 >
-                  {solution.cta}
+                  {t('learnMore')}
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
                 </Button>
               </CardContent>
@@ -87,19 +88,19 @@ export function FeaturesSection() {
         {/* How It Works Preview */}
         <div className="text-center bg-gradient-card rounded-3xl p-12 border border-border/50">
           <h3 className="text-2xl sm:text-3xl font-quantico font-bold text-foreground mb-4">
-            Ready to Transform Your Operations?
+            {t('cta.title')}
           </h3>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Join customs professionals across the Netherlands who are already streamlining their clearance processes with CustomsLens.
+            {t('cta.description')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/book-demo">
               <Button variant="primary" size="lg" className="font-quantico uppercase tracking-wide font-medium">
-                Request Demo
+                {t('cta.requestDemo')}
               </Button>
             </Link>
             <Button variant="primary-outline" size="lg" className="font-quantico uppercase tracking-wide font-medium">
-              View Pricing
+              {t('cta.viewPricing')}
             </Button>
           </div>
         </div>

@@ -4,36 +4,38 @@ import { useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { ChevronLeft, ChevronRight, Star } from "lucide-react"
-
-const testimonials = [
-  {
-    name: "Pieter van der Berg",
-    role: "Customs Broker, Rotterdam Customs Solutions",
-    content:
-      "CustomsLens has revolutionized our document processing. What used to take hours now takes minutes, and our clients love the transparency and speed.",
-    rating: 5,
-    avatar: "/professional-man-headshot.png",
-  },
-  {
-    name: "Maria Gonzalez",
-    role: "Operations Manager, European Freight Networks",
-    content:
-      "Managing hundreds of importers was a nightmare until we found CustomsLens. The platform gives us complete visibility and our clearance times have improved by 70%.",
-    rating: 5,
-    avatar: "/latina-professional-headshot.png",
-  },
-  {
-    name: "James Morrison",
-    role: "Import Director, Global Trade Corp",
-    content:
-      "The AI-powered invoice extraction is incredible. No more manual data entry, no more errors. CustomsLens has made our Dutch operations seamless.",
-    rating: 5,
-    avatar: "/professional-woman-headshot.png",
-  },
-]
+import { useTranslations } from 'next-intl'
 
 export function TestimonialsSection() {
+  const t = useTranslations('Testimonials')
   const [currentIndex, setCurrentIndex] = useState(0)
+  
+  const testimonials = [
+    {
+      name: t('testimonial1.author'),
+      role: t('testimonial1.role'),
+      company: t('testimonial1.company'),
+      content: t('testimonial1.quote'),
+      rating: 5,
+      avatar: "/professional-man-headshot.png",
+    },
+    {
+      name: t('testimonial2.author'),
+      role: t('testimonial2.role'),
+      company: t('testimonial2.company'),
+      content: t('testimonial2.quote'),
+      rating: 5,
+      avatar: "/latina-professional-headshot.png",
+    },
+    {
+      name: t('testimonial3.author'),
+      role: t('testimonial3.role'),
+      company: t('testimonial3.company'),
+      content: t('testimonial3.quote'),
+      rating: 5,
+      avatar: "/professional-woman-headshot.png",
+    },
+  ]
 
   const nextTestimonial = () => {
     setCurrentIndex((prev) => (prev + 1) % testimonials.length)
@@ -48,13 +50,13 @@ export function TestimonialsSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <div className="inline-block px-4 py-2 bg-primary-blue/10 rounded-full text-primary-blue text-sm font-medium mb-4">
-            Customer Success
+            {t('title')}
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-quantico font-bold text-foreground mb-4">
-            Trusted by Dutch Customs Professionals
+            {t('subtitle')}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            See how CustomsLens is transforming customs operations across the Netherlands.
+            {t('subtitle')}
           </p>
         </div>
 
@@ -81,6 +83,7 @@ export function TestimonialsSection() {
                   <div className="text-left">
                     <div className="font-semibold text-foreground">{testimonials[currentIndex].name}</div>
                     <div className="text-muted-foreground">{testimonials[currentIndex].role}</div>
+                    <div className="text-muted-foreground text-sm">{testimonials[currentIndex].company}</div>
                   </div>
                 </div>
               </div>

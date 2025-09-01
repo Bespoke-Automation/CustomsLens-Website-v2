@@ -4,10 +4,13 @@ import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Menu, X, Eye } from "lucide-react"
 import Link from "next/link"
+import { useTranslations } from 'next-intl'
+import { LanguageSwitcher } from './language-switcher'
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const t = useTranslations('Header')
 
   useEffect(() => {
     const handleScroll = () => {
@@ -40,39 +43,35 @@ export function Header() {
           {/* Desktop Navigation */}
           <nav className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
-              <Link href="/#solutions" className={`transition-colors duration-200 font-quantico uppercase tracking-wide text-sm font-medium ${
+              <Link href="/#features" className={`transition-colors duration-200 font-quantico uppercase tracking-wide text-sm font-medium ${
                 isScrolled ? "text-gray-700 hover:text-primary-blue" : "text-white hover:text-white/80"
               }`}>
-                Solutions
+                {t('features')}
               </Link>
               <Link href="/#how-it-works" className={`transition-colors duration-200 font-quantico uppercase tracking-wide text-sm font-medium ${
                 isScrolled ? "text-gray-700 hover:text-primary-blue" : "text-white hover:text-white/80"
               }`}>
-                How It Works
+                {t('howItWorks')}
               </Link>
-              <Link href="/#about" className={`transition-colors duration-200 font-quantico uppercase tracking-wide text-sm font-medium ${
+              <Link href="/#pricing" className={`transition-colors duration-200 font-quantico uppercase tracking-wide text-sm font-medium ${
                 isScrolled ? "text-gray-700 hover:text-primary-blue" : "text-white hover:text-white/80"
               }`}>
-                About
+                {t('pricing')}
               </Link>
-              <Link href="/#contact" className={`transition-colors duration-200 font-quantico uppercase tracking-wide text-sm font-medium ${
+              <Link href="/#testimonials" className={`transition-colors duration-200 font-quantico uppercase tracking-wide text-sm font-medium ${
                 isScrolled ? "text-gray-700 hover:text-primary-blue" : "text-white hover:text-white/80"
               }`}>
-                Contact
+                {t('testimonials')}
               </Link>
             </div>
           </nav>
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="ghost" className={`font-quantico uppercase tracking-wide font-medium ${
-              isScrolled ? "text-gray-700" : "text-white"
-            }`}>
-              Login
-            </Button>
+            <LanguageSwitcher isScrolled={isScrolled} />
             <Link href="/book-demo">
               <Button variant={isScrolled ? "primary" : "white"} className="font-quantico uppercase tracking-wide font-medium">
-                Request Demo
+                {t('bookDemo')}
               </Button>
             </Link>
           </div>
@@ -94,12 +93,12 @@ export function Header() {
               isScrolled ? "bg-white/95 border-gray-200" : "bg-white/10 border-white/20"
             }`}>
               <Link
-                href="/#solutions"
+                href="/#features"
                 className={`block px-3 py-2 transition-colors duration-200 font-quantico uppercase tracking-wide text-sm font-medium ${
                   isScrolled ? "text-gray-700 hover:text-primary-blue" : "text-white hover:text-white/80"
                 }`}
               >
-                Solutions
+                {t('features')}
               </Link>
               <Link
                 href="/#how-it-works"
@@ -107,35 +106,33 @@ export function Header() {
                   isScrolled ? "text-gray-700 hover:text-primary-blue" : "text-white hover:text-white/80"
                 }`}
               >
-                How It Works
+                {t('howItWorks')}
               </Link>
               <Link
-                href="/#about"
+                href="/#pricing"
                 className={`block px-3 py-2 transition-colors duration-200 font-quantico uppercase tracking-wide text-sm font-medium ${
                   isScrolled ? "text-gray-700 hover:text-primary-blue" : "text-white hover:text-white/80"
                 }`}
               >
-                About
+                {t('pricing')}
               </Link>
               <Link
-                href="/#contact"
+                href="/#testimonials"
                 className={`block px-3 py-2 transition-colors duration-200 font-quantico uppercase tracking-wide text-sm font-medium ${
                   isScrolled ? "text-gray-700 hover:text-primary-blue" : "text-white hover:text-white/80"
                 }`}
               >
-                Contact
+                {t('testimonials')}
               </Link>
               <div className="px-3 py-2 space-y-2">
-                <Button variant="ghost" className={`w-full font-quantico uppercase tracking-wide text-sm font-medium transition-colors duration-200 ${
-                  isScrolled ? "text-gray-700 hover:text-primary-blue" : "text-white hover:text-white/80"
-                }`}>
-                  Login
-                </Button>
+                <div className="flex justify-center mb-2">
+                  <LanguageSwitcher isScrolled={isScrolled} />
+                </div>
                 <Link href="/book-demo" className="w-full">
                   <Button className={`w-full font-quantico uppercase tracking-wide text-sm font-medium transition-colors duration-200 ${
                     isScrolled ? "bg-primary-blue text-white hover:bg-primary-blue/90" : "bg-white text-primary-blue hover:bg-white/90"
                   }`}>
-                    Request Demo
+                    {t('bookDemo')}
                   </Button>
                 </Link>
               </div>
