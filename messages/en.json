@@ -9,11 +9,11 @@
   },
   "Hero": {
     "flag": "🇳🇱 Netherlands Customs Specialists",
-    "title": "AI-Powered Customs Intelligence Platform",
-    "subtitle": "Reduce customs declaration errors by 90%, ensure compliance, and optimize your import/export operations with our advanced AI technology.",
-    "startFreeTrial": "Start Free Trial",
-    "watchDemo": "Watch Demo",
-    "trustedBy": "Trusted by",
+    "title": "Streamline Customs Clearance in the Netherlands",
+    "subtitle": "AI-powered platform transforming how customs brokers, forwarders, and importers navigate Dutch customs with unprecedented speed and compliance.",
+    "startFreeTrial": "Request Demo",
+    "watchDemo": "See Solutions",
+    "trustedBy": "Join Dutch customs professionals already transforming their operations",
     "stats": {
       "processing": {
         "number": "80%",
@@ -33,30 +33,30 @@
     }
   },
   "Features": {
-    "title": "Features",
-    "subtitle": "Streamline Your Customs Operations",
-    "description": "Our AI-powered platform provides comprehensive tools to optimize every aspect of your customs workflow",
+    "title": "Our Solutions",
+    "subtitle": "Complete Customs Platform",
+    "description": "From document automation to full-service management, CustomsLens offers flexible solutions for every stage of customs clearance in the Netherlands.",
     "learnMore": "Learn More",
-    "hsCodes": {
-      "title": "HS Code Classification",
-      "description": "Leverage AI to accurately classify products with the correct HS codes, reducing errors and delays",
-      "benefit1": "90% accuracy",
-      "benefit2": "Real-time validation", 
-      "benefit3": "Instant classification"
+    "dvbfv": {
+      "title": "DV/BFV Module",
+      "description": "Automate Direct and Limited Fiscal Representation documents with drag-and-drop templates, real-time validation, and digital signing.",
+      "benefit1": "80% time reduction",
+      "benefit2": "Zero validation errors", 
+      "benefit3": "Complete audit trail"
     },
-    "compliance": {
-      "title": "Compliance Monitoring",
-      "description": "Stay updated with changing regulations and ensure full compliance across all jurisdictions",
-      "benefit1": "Multi-jurisdiction",
-      "benefit2": "Real-time updates",
-      "benefit3": "Automated alerts"
+    "requests": {
+      "title": "Customs Requests",
+      "description": "Transform email-based clearance requests into structured digital workflows with AI-powered invoice extraction.",
+      "benefit1": "Multi-language support",
+      "benefit2": "Container tracking",
+      "benefit3": "Document management"
     },
-    "documents": {
-      "title": "Document Management",
-      "description": "Automate document generation and validation to streamline your customs paperwork",
-      "benefit1": "Auto-generation",
-      "benefit2": "Digital validation",
-      "benefit3": "Audit trails"
+    "caas": {
+      "title": "Customs-as-a-Service",
+      "description": "Complete managed service connecting international forwarders to vetted Dutch customs brokers.",
+      "benefit1": "Broker network access",
+      "benefit2": "Single point of contact",
+      "benefit3": "Managed compliance"
     },
     "riskAssessment": {
       "title": "Risk Assessment",
@@ -75,7 +75,9 @@
       "description": "Join customs professionals across the Netherlands who are already streamlining their clearance processes with CustomsLens.",
       "requestDemo": "Request Demo",
       "viewPricing": "View Pricing"
-    }
+    },
+    "exploreFeatures": "Explore Features",
+    "getStarted": "Get Started"
   },
   "HowItWorks": {
     "title": "How It Works",
@@ -202,10 +204,10 @@
     }
   },
   "CTA": {
-    "title": "Ready to Transform Your Customs Operations?",
-    "subtitle": "Join thousands of companies that trust CustomsLens for their customs compliance",
-    "primaryButton": "Start Your Free Trial",
-    "secondaryButton": "Schedule a Demo",
+    "title": "Transform Your Customs Operations Today",
+    "subtitle": "Join Dutch customs professionals who are already streamlining their clearance processes. Experience the power of AI-driven automation and real-time compliance validation.",
+    "primaryButton": "Request Personalized Demo",
+    "secondaryButton": "Explore Solutions",
     "benefits": {
       "setup": "Setup in days, not months",
       "processing": "80% faster processing", 
