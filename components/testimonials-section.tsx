@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { ChevronLeft, ChevronRight, Star } from "lucide-react"
@@ -17,7 +18,7 @@ export function TestimonialsSection() {
       company: t('testimonial1.company'),
       content: t('testimonial1.quote'),
       rating: 5,
-      avatar: "/professional-man-headshot.png",
+      avatar: "/sarah-chen.png",
     },
     {
       name: t('testimonial2.author'),
@@ -25,7 +26,7 @@ export function TestimonialsSection() {
       company: t('testimonial2.company'),
       content: t('testimonial2.quote'),
       rating: 5,
-      avatar: "/latina-professional-headshot.png",
+      avatar: "/michael-rodriguez.png",
     },
     {
       name: t('testimonial3.author'),
@@ -33,7 +34,7 @@ export function TestimonialsSection() {
       company: t('testimonial3.company'),
       content: t('testimonial3.quote'),
       rating: 5,
-      avatar: "/professional-woman-headshot.png",
+      avatar: "/emma-thompson.png",
     },
   ]
 
@@ -75,10 +76,13 @@ export function TestimonialsSection() {
                 </blockquote>
 
                 <div className="flex items-center justify-center space-x-4">
-                  <img
+                  <Image
                     src={testimonials[currentIndex].avatar || "/placeholder.svg"}
                     alt={testimonials[currentIndex].name}
-                    className="w-12 h-12 rounded-full"
+                    width={48}
+                    height={48}
+                    className="w-12 h-12 rounded-full object-cover"
+                    priority
                   />
                   <div className="text-left">
                     <div className="font-semibold text-foreground">{testimonials[currentIndex].name}</div>

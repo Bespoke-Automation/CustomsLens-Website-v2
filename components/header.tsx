@@ -2,10 +2,11 @@
 
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import { Menu, X, Eye } from "lucide-react"
+import { Menu, X } from "lucide-react"
 import Link from "next/link"
 import { useTranslations } from 'next-intl'
 import { LanguageSwitcher } from './language-switcher'
+import Image from "next/image"
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -31,12 +32,21 @@ export function Header() {
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/" className="flex-shrink-0 flex items-center space-x-2">
-              <div className="w-8 h-8 bg-primary-blue rounded-lg flex items-center justify-center">
-                <Eye className="w-4 h-4 text-white" />
-              </div>
-              <span className={`text-2xl font-quantico font-bold transition-colors duration-300 ${
-                isScrolled ? "text-primary-blue" : "text-white"
-              }`}>CustomsLens</span>
+              <Image
+                src="/customslens-logo.png"
+                alt="CustomsLens logo"
+                width={40}
+                height={40}
+                className="h-10 w-auto"
+                priority
+              />
+              <span
+                className={`text-2xl font-quantico font-bold transition-colors duration-300 ${
+                  isScrolled ? "text-primary-blue" : "text-white"
+                }`}
+              >
+                CustomsLens
+              </span>
             </Link>
           </div>
 

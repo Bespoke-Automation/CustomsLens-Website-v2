@@ -1,6 +1,7 @@
 "use client"
 
-import { Linkedin, Mail, Eye } from "lucide-react"
+import Image from "next/image"
+import { Linkedin, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { useTranslations } from 'next-intl'
@@ -13,10 +14,15 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-primary-blue rounded-lg flex items-center justify-center">
-                <Eye className="w-4 h-4 text-white" />
-              </div>
+            <div className="flex items-center space-x-3 mb-4">
+              <Image
+                src="/customslens-logo.png"
+                alt="CustomsLens logo"
+                width={40}
+                height={40}
+                className="h-10 w-10 object-contain"
+                priority
+              />
               <span className="text-2xl font-quantico font-bold">CustomsLens</span>
             </div>
             <p className="text-background/70 mb-6 max-w-md leading-relaxed">
@@ -113,10 +119,15 @@ export function Footer() {
 
           {/* Social Media Icons */}
           <div className="flex space-x-4">
-            <a href="mailto:hello@customslens.nl" className="text-background/60 hover:text-background transition-colors">
+            <a href="mailto:leon@customslens.nl" className="text-background/60 hover:text-background transition-colors">
               <Mail className="h-5 w-5" />
             </a>
-            <a href="#" className="text-background/60 hover:text-background transition-colors">
+            <a
+              href="https://www.linkedin.com/company/customslens/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-background/60 hover:text-background transition-colors"
+            >
               <Linkedin className="h-5 w-5" />
             </a>
           </div>

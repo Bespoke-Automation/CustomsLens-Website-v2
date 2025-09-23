@@ -27,6 +27,11 @@ export const metadata: Metadata = {
     "AI-powered customs clearance platform for Dutch brokers, forwarders, and importers. Automate DV/BFV processing, streamline customs requests, and ensure 100% compliance.",
   keywords: "customs clearance, Netherlands customs, DV BFV automation, Dutch customs broker, Rotterdam port, customs software",
   generator: "v0.app",
+  icons: {
+    icon: "/customslens-logo.png",
+    shortcut: "/customslens-logo.png",
+    apple: "/customslens-logo.png",
+  },
 }
 
 export default async function LocaleLayout({
