@@ -41,7 +41,7 @@
       "title": "DV/BFV Module",
       "description": "Automate Direct and Limited Fiscal Representation documents with drag-and-drop templates, real-time validation, and digital signing.",
       "benefit1": "80% time reduction",
-      "benefit2": "Zero validation errors", 
+      "benefit2": "Zero validation errors",
       "benefit3": "Complete audit trail"
     },
     "compliance": {
@@ -85,7 +85,7 @@
       "title": "For Customs Brokers",
       "description": "Modernize your practice and attract new clients with digital efficiency",
       "step1": "Sign up for CustomsLens SaaS",
-      "step2": "Configure templates and workflows", 
+      "step2": "Configure templates and workflows",
       "step3": "Invite clients to the platform",
       "step4": "Process clearances digitally",
       "cta": "Start Modernizing"
@@ -100,7 +100,7 @@
       "cta": "Explore Options"
     },
     "importers": {
-      "title": "For Importers", 
+      "title": "For Importers",
       "description": "Never face delays from documentation errors again",
       "step1": "Receive invitation from your service provider",
       "step2": "Complete company validation once",
@@ -116,7 +116,7 @@
         "description": "Link your existing systems or start fresh with CustomsLens"
       },
       "automate": {
-        "title": "2. Automate", 
+        "title": "2. Automate",
         "description": "AI handles document processing and validation automatically"
       },
       "monitor": {
@@ -208,7 +208,7 @@
     "secondaryButton": "Explore Solutions",
     "benefits": {
       "setup": "Setup in days, not months",
-      "processing": "80% faster processing", 
+      "processing": "80% faster processing",
       "compliance": "100% compliance guarantee"
     },
     "footer": "Ready to get started? • Free consultation • Tailored to your needs"
@@ -255,5 +255,15 @@
     "title": "Book a Demo",
     "subtitle": "See CustomsLens in Action",
     "description": "Schedule a personalized demo with our customs experts and discover how CustomsLens can transform your import/export operations."
+  },
+  "Blog": {
+    "title": "Insights & Updates",
+    "summary": "Read the latest thinking from the CustomsLens team.",
+    "empty": "No posts published yet. Check back soon.",
+    "readMore": "Read more",
+    "heroTitle": "CustomsLens Journal",
+    "highlights": "Latest highlights",
+    "moreInsights": "More insights",
+    "back": "Back to insights"
   }
 }

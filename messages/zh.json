@@ -255,5 +255,15 @@
     "title": "预约演示",
     "subtitle": "查看CustomsLens实际操作",
     "description": "与我们的海关专家预约个性化演示，了解CustomsLens如何改变您的进出口业务。"
+  },
+  "Blog": {
+    "title": "洞察与更新",
+    "summary": "阅读CustomsLens团队的最新观点。",
+    "empty": "目前还没有发布文章，敬请期待。",
+    "readMore": "了解详情",
+    "heroTitle": "CustomsLens 洞察",
+    "highlights": "最新亮点",
+    "moreInsights": "更多洞察",
+    "back": "返回洞察"
   }
 }

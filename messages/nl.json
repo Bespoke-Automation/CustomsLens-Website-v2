@@ -255,5 +255,15 @@
     "title": "Boek een Demo",
     "subtitle": "Zie CustomsLens in Actie",
     "description": "Plan een gepersonaliseerde demo met onze douane-experts en ontdek hoe CustomsLens uw import/export operaties kan transformeren."
+  },
+  "Blog": {
+    "title": "Inzichten & Updates",
+    "summary": "Lees het nieuwste nieuws van het CustomsLens-team.",
+    "empty": "Er zijn nog geen artikelen gepubliceerd. Kom later terug.",
+    "readMore": "Lees verder",
+    "heroTitle": "CustomsLens Journaal",
+    "highlights": "Laatste highlights",
+    "moreInsights": "Meer inzichten",
+    "back": "Terug naar inzichten"
   }
 }

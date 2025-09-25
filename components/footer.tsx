@@ -1,13 +1,15 @@
 "use client"
 
 import Image from "next/image"
+import Link from "next/link"
 import { Linkedin, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { useTranslations } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 
 export function Footer() {
   const t = useTranslations('Footer')
+  const locale = useLocale()
   return (
     <footer className="bg-foreground text-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -88,9 +90,9 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-background transition-colors">
+                <Link href={`/${locale}/blog`} className="hover:text-background transition-colors">
                   {t('company.blog')}
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="#contact" className="hover:text-background transition-colors">
