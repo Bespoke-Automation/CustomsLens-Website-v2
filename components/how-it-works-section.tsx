@@ -33,11 +33,11 @@ export function HowItWorksSection() {
     }
   ]
   return (
-    <section id="how-it-works" className="py-24 bg-background">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="how-it-works" className="relative py-24">
+      <div className="container relative mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-20">
-          <div className="inline-block px-4 py-2 bg-primary-blue/10 rounded-full text-primary-blue text-sm font-medium mb-4">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-blue-100 bg-white text-primary-blue text-sm font-medium shadow-sm mb-4">
             {t('title')}
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-quantico font-bold text-foreground mb-6">
@@ -53,10 +53,10 @@ export function HowItWorksSection() {
           {userJourneys.map((journey, index) => (
             <Card
               key={index}
-              className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 bg-card border-border/50 overflow-hidden relative"
+              className="group relative overflow-hidden border border-blue-100/70 bg-white/90 shadow-sm backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:shadow-xl"
             >
               {/* Color accent bar */}
-              <div className="absolute top-0 left-0 w-full h-1 bg-primary-blue"></div>
+              <div className="absolute top-0 left-0 w-full h-1 bg-[rgba(0,102,255,0.35)]" />
               
               <CardContent className="p-8">
                 <h3 className="text-2xl font-quantico font-bold text-card-foreground mb-3">
@@ -71,7 +71,7 @@ export function HowItWorksSection() {
                 <div className="space-y-4 mb-8">
                   {journey.steps.map((step, stepIndex) => (
                     <div key={stepIndex} className="flex items-start space-x-3">
-                      <div className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-white text-sm font-bold bg-primary-blue">
+                      <div className="flex-shrink-0 w-8 h-8 rounded-full bg-blue-50 text-primary-blue font-semibold flex items-center justify-center">
                         {stepIndex + 1}
                       </div>
                       <div className="flex-1">
@@ -96,7 +96,7 @@ export function HowItWorksSection() {
         </div>
 
         {/* Process Overview */}
-        <div className="bg-gradient-card rounded-3xl p-12 border border-border/50">
+        <div className="rounded-3xl border border-blue-100 bg-white/90 p-12 shadow-sm backdrop-blur-sm">
           <div className="text-center mb-12">
             <h3 className="text-2xl sm:text-3xl font-quantico font-bold text-foreground mb-4">
               {t('integration.title')}
@@ -109,7 +109,7 @@ export function HowItWorksSection() {
           {/* Integration Steps */}
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-primary-blue/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 rounded-2xl bg-blue-50 flex items-center justify-center mx-auto mb-4">
                 <UserPlus className="w-8 h-8 text-primary-blue" />
               </div>
               <h4 className="font-semibold text-foreground mb-2">{t('integration.connect.title')}</h4>
@@ -117,7 +117,7 @@ export function HowItWorksSection() {
             </div>
             
             <div className="text-center">
-              <div className="w-16 h-16 bg-primary-blue/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 rounded-2xl bg-blue-50 flex items-center justify-center mx-auto mb-4">
                 <Zap className="w-8 h-8 text-primary-blue" />
               </div>
               <h4 className="font-semibold text-foreground mb-2">{t('integration.automate.title')}</h4>
@@ -125,7 +125,7 @@ export function HowItWorksSection() {
             </div>
             
             <div className="text-center">
-              <div className="w-16 h-16 bg-primary-blue/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 rounded-2xl bg-blue-50 flex items-center justify-center mx-auto mb-4">
                 <BarChart className="w-8 h-8 text-primary-blue" />
               </div>
               <h4 className="font-semibold text-foreground mb-2">{t('integration.monitor.title')}</h4>
@@ -133,7 +133,7 @@ export function HowItWorksSection() {
             </div>
             
             <div className="text-center">
-              <div className="w-16 h-16 bg-primary-blue/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 rounded-2xl bg-blue-50 flex items-center justify-center mx-auto mb-4">
                 <ArrowRight className="w-8 h-8 text-primary-blue" />
               </div>
               <h4 className="font-semibold text-foreground mb-2">{t('integration.scale.title')}</h4>

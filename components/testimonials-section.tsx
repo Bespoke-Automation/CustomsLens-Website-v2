@@ -47,10 +47,10 @@ export function TestimonialsSection() {
   }
 
   return (
-    <section id="testimonials" className="py-20 bg-muted">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="testimonials" className="relative py-20">
+      <div className="container relative mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <div className="inline-block px-4 py-2 bg-primary-blue/10 rounded-full text-primary-blue text-sm font-medium mb-4">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-blue-100 bg-white text-primary-blue text-sm font-medium shadow-sm mb-4">
             {t('title')}
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-quantico font-bold text-foreground mb-4">
@@ -62,7 +62,7 @@ export function TestimonialsSection() {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <Card className="bg-background border-border">
+          <Card className="border border-blue-100 bg-white/95 shadow-sm backdrop-blur-sm">
             <CardContent className="p-8 sm:p-12">
               <div className="text-center">
                 <div className="flex justify-center mb-6">
@@ -105,7 +105,7 @@ export function TestimonialsSection() {
                   key={index}
                   onClick={() => setCurrentIndex(index)}
                   className={`w-2 h-2 rounded-full transition-colors duration-200 ${
-                    index === currentIndex ? "bg-accent" : "bg-border"
+                    index === currentIndex ? "bg-primary-blue" : "bg-blue-100"
                   }`}
                 />
               ))}

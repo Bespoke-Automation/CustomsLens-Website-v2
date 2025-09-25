@@ -59,16 +59,16 @@ export function BookingContent() {
   }, [])
 
   return (
-    <section className="pt-20 pb-24 gradient-hero min-h-screen">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="relative pt-24 pb-24 min-h-screen">
+      <div className="container relative mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
           {/* Hero Section */}
           <div className="text-center mb-12">
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-quantico font-bold text-white mb-6 mt-12">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-quantico font-bold text-gray-900 mb-6">
               See CustomsLens in Action
             </h1>
             
-            <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
               Schedule a personalized demo to see how CustomsLens can transform your Dutch customs operations.
               Our experts will show you real-world scenarios tailored to your business needs.
             </p>
@@ -96,32 +96,32 @@ export function BookingContent() {
 
           {/* Key Benefits - Compact version below calendar */}
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+            <div className="rounded-xl border border-blue-100 bg-white/95 p-6 shadow-sm backdrop-blur-sm">
               <div className="flex items-center space-x-3 mb-3">
-                <Users className="w-6 h-6 text-white" />
-                <h3 className="font-quantico font-semibold text-white">Expert Guidance</h3>
+                <Users className="w-6 h-6 text-primary-blue" />
+                <h3 className="font-quantico font-semibold text-gray-900">Expert Guidance</h3>
               </div>
-              <p className="text-white/80 text-sm">
+              <p className="text-gray-600 text-sm">
                 Our Dutch customs specialists will guide you through the platform tailored to your needs
               </p>
             </div>
             
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+            <div className="rounded-xl border border-blue-100 bg-white/95 p-6 shadow-sm backdrop-blur-sm">
               <div className="flex items-center space-x-3 mb-3">
-                <Zap className="w-6 h-6 text-white" />
-                <h3 className="font-quantico font-semibold text-white">Instant Setup</h3>
+                <Zap className="w-6 h-6 text-primary-blue" />
+                <h3 className="font-quantico font-semibold text-gray-900">Instant Setup</h3>
               </div>
-              <p className="text-white/80 text-sm">
+              <p className="text-gray-600 text-sm">
                 Get started in days, not months with our streamlined onboarding process
               </p>
             </div>
             
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+            <div className="rounded-xl border border-blue-100 bg-white/95 p-6 shadow-sm backdrop-blur-sm">
               <div className="flex items-center space-x-3 mb-3">
-                <CheckCircle className="w-6 h-6 text-white" />
-                <h3 className="font-quantico font-semibold text-white">Guaranteed Results</h3>
+                <CheckCircle className="w-6 h-6 text-primary-blue" />
+                <h3 className="font-quantico font-semibold text-gray-900">Guaranteed Results</h3>
               </div>
-              <p className="text-white/80 text-sm">
+              <p className="text-gray-600 text-sm">
                 100% compliance guarantee with 80% faster processing times
               </p>
             </div>
@@ -129,10 +129,10 @@ export function BookingContent() {
 
           {/* Trust Indicators */}
           <div className="mt-12 text-center">
-            <p className="text-white/70 text-sm mb-4">
+            <p className="text-gray-500 text-sm mb-4">
               Join Dutch customs professionals who trust CustomsLens
             </p>
-            <div className="flex flex-wrap justify-center items-center gap-6 text-white/60 text-xs">
+            <div className="flex flex-wrap justify-center items-center gap-6 text-gray-500 text-xs">
               <div className="flex items-center space-x-2">
                 <span>🏢</span>
                 <span>Rotterdam Port Authority</span>

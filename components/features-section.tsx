@@ -31,10 +31,10 @@ export function FeaturesSection() {
   ]
   
   return (
-    <section id="features" className="py-24 bg-muted/30">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="features" className="relative py-24">
+      <div className="container relative mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <div className="inline-block px-4 py-2 bg-primary-blue/10 rounded-full text-primary-blue text-sm font-medium mb-4">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-blue-100 bg-white text-primary-blue text-sm font-medium shadow-sm mb-4">
             {t('title')}
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-quantico font-bold text-foreground mb-6">
@@ -49,11 +49,11 @@ export function FeaturesSection() {
           {solutions.map((solution, index) => (
             <Card
               key={index}
-              className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-card border-border/50 overflow-hidden"
+              className="group relative overflow-hidden border border-blue-100/70 bg-white/90 shadow-sm backdrop-blur-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-xl"
             >
               <CardContent className="p-8">
-                <div className="mb-6 inline-flex items-center justify-center w-16 h-16 bg-slate-100 rounded-2xl group-hover:bg-slate-200 transition-all duration-300">
-                  <solution.icon className="h-8 w-8 text-primary-blue transition-colors duration-300" />
+                <div className="mb-6 inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-blue-50 text-primary-blue transition-all duration-300 group-hover:bg-blue-100">
+                  <solution.icon className="h-8 w-8" />
                 </div>
                 
                 <h3 className="text-2xl font-quantico font-bold text-card-foreground mb-4">
@@ -66,8 +66,8 @@ export function FeaturesSection() {
 
                 <div className="space-y-2 mb-8">
                   {solution.benefits.map((benefit, benefitIndex) => (
-                    <div key={benefitIndex} className="flex items-center space-x-2">
-                      <div className="w-2 h-2 bg-primary-blue rounded-full"></div>
+                    <div key={benefitIndex} className="flex items-center space-x-3">
+                      <div className="h-2 w-2 rounded-full bg-[rgba(0,102,255,0.4)]" />
                       <span className="text-sm text-muted-foreground">{benefit}</span>
                     </div>
                   ))}
@@ -86,7 +86,7 @@ export function FeaturesSection() {
         </div>
 
         {/* How It Works Preview */}
-        <div className="text-center bg-gradient-card rounded-3xl p-12 border border-border/50">
+        <div className="text-center rounded-3xl border border-blue-100 bg-white/90 p-12 shadow-sm backdrop-blur-sm">
           <h3 className="text-2xl sm:text-3xl font-quantico font-bold text-foreground mb-4">
             {t('cta.title')}
           </h3>

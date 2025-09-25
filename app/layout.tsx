@@ -32,7 +32,7 @@ export default async function RootLayout({
       className={`${quantico.variable} ${manrope.variable} antialiased`}
       suppressHydrationWarning
     >
-      <body className="bg-background font-manrope text-foreground">
+      <body className="bg-gradient-to-b from-white via-[#F7FAFF] to-[#E8F0FF] font-manrope text-foreground">
         {children}
       </body>
     </html>

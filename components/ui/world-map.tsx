@@ -4,28 +4,28 @@ import { useRef } from "react";
 import { motion } from "motion/react";
 import DottedMap from "dotted-map";
 
-import { useTheme } from "next-themes";
-
 interface MapProps {
   dots?: Array<{
     start: { lat: number; lng: number; label?: string };
     end: { lat: number; lng: number; label?: string };
   }>;
   lineColor?: string;
+  dotColor?: string;
 }
 
 export default function WorldMap({
   dots = [],
   lineColor = "#0ea5e9",
+  dotColor,
 }: MapProps) {
   const svgRef = useRef<SVGSVGElement>(null);
   const map = new DottedMap({ height: 100, grid: "diagonal" });
 
-  const { theme } = useTheme();
+  const resolvedDotColor = dotColor ?? "rgba(30, 64, 175, 0.35)";
 
   const svgMap = map.getSVG({
     radius: 0.22,
-    color: "#FFFFFF60", // Always use white dots for the blue background
+    color: resolvedDotColor,
     shape: "circle",
     backgroundColor: "transparent", // Transparent background
   });
