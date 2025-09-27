@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "CustomsLens",
+  "name_for_model": "customslens",
+  "description_for_human": "CustomsLens - Customs clearance and international trade services",
+  "description_for_model": "Website for CustomsLens, providing information about customs clearance, international trade services, and logistics solutions.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "website",
+    "url": "https://customslens.nl"
+  },
+  "logo_url": "https://customslens.nl/logo.png",
+  "contact_email": "info@customslens.nl",
+  "legal_info_url": "https://customslens.nl/privacy"
+}
