@@ -1,4 +1,18 @@
+# Allow all crawlers by default
 User-agent: *
+Allow: /
+
+# Explicitly allow AI/LLM crawlers
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
 Allow: /
 
 Sitemap: https://customslens.nl/sitemap.xml
